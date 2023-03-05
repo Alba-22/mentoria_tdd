@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.alba.mentoria_tdd">
+    package="dev.alba.tunefy">
    <application
-        android:label="mentoria_tdd"
+        android:label="tunefy"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

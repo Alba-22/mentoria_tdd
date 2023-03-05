@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "dev.alba" "\0"
-            VALUE "FileDescription", "mentoria_tdd" "\0"
+            VALUE "FileDescription", "tunefy" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "mentoria_tdd" "\0"
+            VALUE "InternalName", "tunefy" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 dev.alba. All rights reserved." "\0"
-            VALUE "OriginalFilename", "mentoria_tdd.exe" "\0"
-            VALUE "ProductName", "mentoria_tdd" "\0"
+            VALUE "OriginalFilename", "tunefy.exe" "\0"
+            VALUE "ProductName", "tunefy" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

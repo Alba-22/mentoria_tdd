@@ -1,6 +1,6 @@
 {
-    "name": "mentoria_tdd",
-    "short_name": "mentoria_tdd",
+    "name": "tunefy",
+    "short_name": "tunefy",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

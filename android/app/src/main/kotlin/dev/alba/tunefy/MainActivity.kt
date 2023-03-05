@@ -1,4 +1,4 @@
-package dev.alba.mentoria_tdd
+package dev.alba.tunefy
 
 import io.flutter.embedding.android.FlutterActivity
 
