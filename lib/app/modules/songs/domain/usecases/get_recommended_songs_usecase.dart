@@ -1,8 +1,9 @@
 import 'package:fpdart/fpdart.dart';
 
-import '../entities/song_entity.dart';
-import '../entities/usecase.dart';
-import '../errors/failures.dart';
+import 'package:tunefy/app/core/domain/entities/song_entity.dart';
+import 'package:tunefy/app/core/domain/entities/usecase.dart';
+import 'package:tunefy/app/core/domain/errors/failures.dart';
+
 import '../repositories/songs_repository.dart';
 
 class GetRecommendedSongsUsecase implements Usecase<List<SongEntity>, Unit> {
