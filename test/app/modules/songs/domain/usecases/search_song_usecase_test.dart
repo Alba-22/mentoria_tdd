@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:tunefy/app/core/domain/entities/song_entity.dart';
 import 'package:tunefy/app/modules/songs/domain/errors/failures.dart';
 import 'package:tunefy/app/modules/songs/domain/repositories/songs_repository.dart';
 import 'package:tunefy/app/modules/songs/domain/usecases/search_song_usecase.dart';
@@ -21,13 +22,15 @@ void main() {
     () async {
       // Arrange
       const text = "STARSET";
-      when(() => repository.getSongsByText(any())).thenAnswer((_) async => const Right([]));
+      when(() => repository.getSongsByText(any())).thenAnswer((_) async => const Right(<SongEntity>[]));
 
       // Act
-      await usecase.call(text);
+      final result = await usecase.call(text);
 
       // Assert
+      expect(result, const Right(<SongEntity>[]));
       verify(() => repository.getSongsByText(text)).called(1);
+      verifyNoMoreInteractions(repository);
     },
   );
 
@@ -42,6 +45,7 @@ void main() {
 
       // Assert
       expect(result, const Left(EmptyTextFailure()));
+      verifyNever(() => repository.getSongsByText(text));
     },
   );
 }

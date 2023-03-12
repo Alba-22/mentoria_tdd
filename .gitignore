@@ -46,3 +46,4 @@ app.*.map.json
 # Project
 .fvm/flutter_sdk
 .vscode/launch.json
+/coverage
